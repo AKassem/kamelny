@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VirtoCommerce.CartModule.Web</name>
+    </assembly>
+    <members>
+        <member name="M:VirtoCommerce.CartModule.Web.Controllers.Api.CartModuleController.GetCartById(System.String)">
+            <summary>
+            Get shopping cart by id
+            </summary>
+            <param name="cartId">Shopping cart id</param>
+        </member>
+        <member name="M:VirtoCommerce.CartModule.Web.Controllers.Api.CartModuleController.Search(VirtoCommerce.Domain.Cart.Model.ShoppingCartSearchCriteria)">
+            <summary>
+            Search shopping carts by given criteria
+            </summary>
+            <param name="criteria">Shopping cart search criteria</param>
+        </member>
+        <member name="M:VirtoCommerce.CartModule.Web.Controllers.Api.CartModuleController.Create(VirtoCommerce.Domain.Cart.Model.ShoppingCart)">
+            <summary>
+            Create shopping cart
+            </summary>
+            <param name="cart">Shopping cart model</param>
+        </member>
+        <member name="M:VirtoCommerce.CartModule.Web.Controllers.Api.CartModuleController.Update(VirtoCommerce.Domain.Cart.Model.ShoppingCart)">
+            <summary>
+            Update shopping cart
+            </summary>
+            <param name="cart">Shopping cart model</param>
+        </member>
+        <member name="M:VirtoCommerce.CartModule.Web.Controllers.Api.CartModuleController.DeleteCarts(System.String[])">
+            <summary>
+            Delete shopping carts by ids
+            </summary>
+            <param name="ids">Array of shopping cart ids</param>
+        </member>
+    </members>
+</doc>

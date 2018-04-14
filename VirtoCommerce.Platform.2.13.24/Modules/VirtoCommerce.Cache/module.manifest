@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<module>
+    <id>VirtoCommerce.Cache</id>
+    <version>1.0.15</version>
+    <platformVersion>2.12.0</platformVersion>
+    <dependencies>
+        <dependency id="VirtoCommerce.Core" version="2.22.0" />
+        <dependency id="VirtoCommerce.Store" version="2.13.0" />
+        <dependency id="VirtoCommerce.Catalog" version="2.16.0" />
+        <dependency id="VirtoCommerce.Customer" version="2.13.0" />
+        <dependency id="VirtoCommerce.Marketing" version="2.16.0" />
+        <dependency id="VirtoCommerce.Pricing" version="2.17.0" />
+    </dependencies>
+    <title>Smart caching module</title>
+    <description>Smart caching for main domain services such as Catalog, Customer, Store.</description>
+    <authors>
+        <author>Eugeney Tatarincev</author>
+        <author>Artem Dudarev</author>
+    </authors>
+    <owners>
+        <owner>Virto Commerce</owner>
+    </owners>
+    <projectUrl>https://virtocommerce.com/apps/extensions/smart-caching-module</projectUrl>
+    <iconUrl>Modules/$(VirtoCommerce.Cache)/Content/logoVC.png</iconUrl>
+    <releaseNotes>First version.</releaseNotes>
+    <copyright>Copyright © 2011-2018 Virto Commerce. All rights reserved</copyright>
+    <tags>cache</tags>
+
+    <assemblyFile>VirtoCommerce.CacheModule.Web.dll</assemblyFile>
+    <moduleType>VirtoCommerce.CacheModule.Web.Module, VirtoCommerce.CacheModule.Web</moduleType>
+    <styles>
+        <directory virtualPath="$/Content" searchPattern="*.css" searchSubdirectories="true" />
+    </styles>
+    <scripts>
+        <directory virtualPath="$/Scripts" searchPattern="*.js" searchSubdirectories="true" />
+    </scripts>
+
+    <settings>
+        <group name="Cache|General">
+            <setting>
+                <name>Cache.Enable</name>
+                <valueType>boolean</valueType>
+                <defaultValue>true</defaultValue>
+                <title>Enable smart caching</title>
+                <description>For the following domain services: Catalog, Store, Customer, Marketing, SEO</description>
+            </setting>
+            <setting>
+                <name>Cache.ExpirationTimeout</name>
+                <valueType>integer</valueType>
+                <defaultValue>60</defaultValue>
+                <title>Сache sliding expiration timeout (seconds)</title>
+                <description>Change this setting to balance memory usage (low timeout - low memory usage, hight - hight memory usage)</description>
+            </setting>
+        </group>
+    </settings>
+
+    <permissions>
+        <group name="Cache">
+            <permission id="cache:reset" name="Reset cache"/>
+        </group>
+    </permissions>
+</module>

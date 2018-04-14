@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>VirtoCommerce.CacheModule.Web</name>
+    </assembly>
+    <members>
+        <member name="M:VirtoCommerce.CacheModule.Web.Controllers.Api.CacheModuleController.GetCacheStats">
+            <summary>
+            Return current platform cache usage stats 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VirtoCommerce.CacheModule.Web.Controllers.Api.CacheModuleController.CacheReset">
+            <summary>
+            Reset current platform cache
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:VirtoCommerce.CacheModule.Web.Controllers.Api.CacheModuleController.ForceChanges(VirtoCommerce.CacheModule.Web.Model.ForceChangesRequest)">
+            <summary>
+            Force set changes last modified date 
+            </summary>
+            <param name="forceRequest">Force changes request</param>
+            <returns></returns>
+        </member>
+        <member name="M:VirtoCommerce.CacheModule.Web.Controllers.Api.CacheModuleController.GetLastModifiedDate(System.String)">
+            <summary>
+            Get last modified date for given scope
+            Used for signal of what something changed and for cache invalidation in external platform clients
+            </summary>
+            <param name="scope"></param>
+            <returns></returns>
+        </member>
+        <member name="P:VirtoCommerce.CacheModule.Web.Model.CacheHandleStat.Name">
+            <summary>
+            Handle name
+            </summary>
+        </member>
+        <member name="P:VirtoCommerce.CacheModule.Web.Model.CacheHandleStat.Hits">
+            <summary>
+            The number of hits.
+            </summary>
+        </member>
+        <member name="P:VirtoCommerce.CacheModule.Web.Model.CacheHandleStat.Misses">
+            <summary>
+            The number of misses.
+            </summary>
+        </member>
+    </members>
+</doc>
